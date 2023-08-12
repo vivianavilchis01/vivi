@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a mi sitio web ૮ ˶ᵔ ᵕ ᵔ˶ ა </title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+        }
+        .navbar {
+            background-color: rgb(217, 152, 245);
+            overflow: hidden;
+            color: white;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: rgb(115,180,250);
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hide {
+            display: none;
+        }
+        /* Aquí está el nuevo código CSS para las imágenes */
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;  
+        }
+        .carousel {
+    position: relative;
+    width: 200px; 
+    height: 200px;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" onclick="showContent('welcome')">Inicio</a>
+        <a href="#" onclick="showContent('about')">Sobre mí</a>
+        <a href="#" onclick="showContent('discs')">Discos favoritos</a>
+    </div>
+
+    <div id="welcome" class="content">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Aquí puedes conocer más sobre mí y mis discos favoritos.</p>
+        <h2>¿Por qué me gusta la música?</h2>
+        <p>La música que adoro es una amalgama de narrativa y estética sonora. El "story telling" aporta profundidad, permitiendo conexiones emocionales y reflejo de experiencias humanas. Por su parte, la combinación de sonidos y ritmos nos ofrece un deleite auditivo, provocando sensaciones únicas. Juntos, estos elementos hacen de la música un arte que trasciende, tocando el alma y el corazón.</p>
+        <div class="image-gallery">
+            <img src="./imagenes/album1.jpg" alt="Gallery Image 1">
+            <img src="./imagenes/album2.jpg" alt="Gallery Image 2">
+            <img src="./imagenes/album3.jpg" alt="Gallery Image 3">
+            <img src="./imagenes/album4.jpg" alt="Gallery Image 4">
+            <img src="./imagenes/album5.jpg" alt="Gallery Image 5">
+            <img src="./imagenes/album6.jpg" alt="Gallery Image 6">
+            <img src="./imagenes/album7.jpg" alt="Gallery Image 7">
+            <img src="./imagenes/album8.jpg" alt="Gallery Image 8">
+            <img src="./imagenes/album9.jpg" alt="Gallery Image 9">
+            <img src="./imagenes/album10.jpg" alt="Gallery Image 10">
+            <img src="./imagenes/album11.jpg" alt="Gallery Image 11">
+            <img src="./imagenes/album12.jpg" alt="Gallery Image 12">
+            <img src="./imagenes/album13.jpg" alt="Gallery Image 13">
+            <img src="./imagenes/album14.jpeg" alt="Gallery Image 14">
+            <img src="./imagenes/album15.jpg" alt="Gallery Image 15">
+            <img src="./imagenes/album16.jpg" alt="Gallery Image 16">
+            <img src="./imagenes/album17.jpeg" alt="Gallery Image 17">
+            <img src="./imagenes/album18.jpg" alt="Gallery Image 18">
+            <img src="./imagenes/album19.jpg" alt="Gallery Image 19">
+            <img src="./imagenes/album20.jpeg" alt="Gallery Image 20">
+        </div>
+        </div>
+    </div>
+
+    <div id="about" class="content hide">
+        <h1>Sobre mí</h1>
+        <p>Me llamo Viviana Vilchis y tengo 22 años. Soy de Monterrey, Nuevo León, México. Soy Ing. en Biotecnología y actualmente estoy aprendiendo sobre desarrollo web y programación. </p>
+    
+        <div class="carousel">
+            <img class="carousel-image" src="./imagenes/perro1.jpg" alt="Image 1">
+            <img class="carousel-image hide" src="./imagenes/perro2.jpg" alt="Image 2">
+            <img class="carousel-image hide" src="./imagenes/perro3.jpg" alt="Image 3">
+        </div>        
+    
+    </div>
+    
+
+    <div id="discs" class="content hide">
+        <h1>Discos favoritos</h1>
+        <p>Algunos de mis discos favoritos son los siguientes:</p>
+        <img src="./imagenes/ElMalQuerer.jpg" alt="ElMalQuerer"/>
+        <a href="#" onclick="showContent('malquerer')">El Mal Querer de Rosalía</a><br>
+        <img src="./imagenes/Homogenic.jpg" alt="Homogenic"/>
+        <a href="#" onclick="showContent('homogenic')">Homogenic de Bjork</a><br>
+        <img src="./imagenes/Caprisongs.jpg" alt="Caprisongs"/>
+        <a href="#" onclick="showContent('caprisongs')">Caprisongs de FKA Twigs</a><br>
+        <img src="./imagenes/Magdalene.jpeg" alt="MAGDALENE"/>
+        <a href="#" onclick="showContent('magdalene')">MAGDALENE de FKA Twigs</a><br>
+        <img src="./imagenes/ElMadrileno.jpeg" alt="ElMadrileno"/>
+        <a href="#" onclick="showContent('madrileno')">El Madrileño de C.Tangana</a><br>
+    </div>
+
+    <div id="malquerer" class="content hide">
+        <h1>El Mal Querer de Rosalía</h1>
+        <img src="./imagenes/ElMalQuerer.jpg" alt="ElMalQuerer"/>
+        <p>Información sobre el disco...</p>
+        <p>"El Mal Querer", el segundo álbum de estudio de la artista española Rosalía, lanzado en 2018, es una innovadora mezcla de ritmos flamencos tradicionales y elementos modernos de pop, música urbana y electrónica. El álbum presenta una narrativa experimental de una relación amorosa tóxica, cada pista correspondiente a un capítulo diferente de la historia. </p>
+
+        <p>Tracklist:</p>
+        <ul>
+            <li>"Malamente" (Cap.1: Augurio) ★ </li>
+            <li>"Que no salga la luna" (Cap.2: Boda) ★ </li>
+            <li>"Pienso en tu mirá" (Cap.3: Celos) ★ </li>
+            <li>"De aquí no sales" (Cap.4: Disputa) ★ </li>
+            <li>"Reniego" (Cap.5: Lamento) ★ </li>
+            <li>"Preso" (Cap.6: Clausura)</li>
+            <li>"Bagdad" (Cap.7: Liturgia) ★ </li>
+            <li>"Di mi nombre" (Cap.8: Éxtasis) ★ </li>
+            <li>"Nana" (Cap.9: Concepción)</li>
+            <li>"Maldición" (Cap.10: Cordura) ★ </li>
+            <li>"A ningún hombre" (Cap.11: Poder) ★ </li>
+        </ul>
+    </div>
+    <div id="homogenic" class="content hide">
+        <h1>Homogenic de Bjork</h1>
+        <img src="./imagenes/Homogenic.jpg" alt="Homogenic"/>
+        <p>Información sobre el disco...</p>
+        <p>"Homogenic", tercer álbum de la islandesa Björk, se lanzó en septiembre de 1997. Distinto a sus anteriores trabajos, combina beats electrónicos con cuerdas, evocando a Islandia. Incluye sencillos como "Jóga" y "Bachelorette". Es considerado uno de los mejores álbumes de la historia.</p>
+
+        <p>Tracklist:</p>
+        <ul>
+            <li>Hunter ★ </li>
+            <li>Jóga ★ </li>
+            <li>Unravel</li>
+            <li>Bachelorette ★ </li>
+            <li>All Neon Like</li>
+            <li>5 Years</li>
+            <li>Immature</li>
+            <li>Alarm Call ★ </li>
+            <li>Pluto ★ </li>
+            <li>All Is Full of Love ★ </li>
+        </ul>
+    </div>
+    <div id="caprisongs" class="content hide">
+        <h1>Caprisongs de FKA Twigs</h1>
+        <img src="./imagenes/Caprisongs.jpg" alt="Caprisongs"/>
+        <p>Información sobre el disco...</p>
+        <p>"CAPRISONGS" es el primer mixtape de la cantante inglesa FKA Twigs, lanzado el 14 de enero de 2022. Marca una transición hacia un sonido más convencional, describiéndose como art pop visceral y avant-pop sin restricciones. Sus letras están influenciadas por R&B y hip hop, y sus beats por trap, drum'n'bass y dancehall.</p>
+        <p>Tracklist:</p>
+        <ul>
+            <li> ride the dragon ★ </li>
+            <li> honda featuring Pa Salieu ★ </li>
+            <li> meta angel ★ </li>
+            <li> tears in the club featuring The Weeknd ★ </li>
+            <li> oh my love ★ </li>
+            <li> pamplemousse ★ </li>
+            <li> caprisongs interlude featuring solo  </li>
+            <li> lightbeamers ★ </li>
+            <li> papi bones featuring shygirl ★ </li>
+            <li> which way featuring dystopia ★ </li>
+            <li> jealousy featuring rema ★ </li>
+            <li> careless featuring daniel caesar ★ </li>
+            <li> minds of men </li>
+            <li> track girl interlude </li>
+            <li> darjeeling featuring jorja smith and unknown ★ </li>
+            <li> christi interlude </li>
+            <li> thank you song ★ </li>
+        </ul>
+    </div>
+    <div id="magdalene" class="content hide">
+        <h1>MAGDALENE de FKA Twigs</h1>
+        <img src="./imagenes/Magdalene.jpeg" alt="MAGDALENE"/>
+        <p>Información sobre el disco...</p>
+        <p>"Magdalene" es el segundo álbum de la cantante inglesa FKA Twigs, lanzado el 8 de noviembre de 2019. En este, Twigs fusiona art pop electrónico con danza moderna y soul carnal. Aunque desafía géneros, recuerda a músicos como Björk y Kate Bush, incorporando elementos de pop, avant-garde, R&B, trap, hip hop, trip hop, alt-pop, punk rock, industrial, ópera, chamber pop y folk búlgaro.        </p>
+        <p>Temas principales:</p>
+
+        <p>Tracklist:</p>
+        <ul>
+            <li> Thousand Eyes </li>
+            <li> Home with You ★ </li>
+            <li> Sad Day ★ </li>
+            <li> Holy Terrain featuring Future ★ </li>
+            <li> Mary Magdalene ★ </li>
+            <li> Fallen Alien </li>
+            <li> Mirrored Heart ★ </li>
+            <li> Daybed </li>
+            <li> Cellophane ★ </li>
+        </ul>
+    </div>
+    <div id="madrileno" class="content hide">
+        <h1>El Madrileño de C.Tangana</h1>
+        <img src="./imagenes/ElMadrileno.jpeg" alt="ElMadrileno"/>
+        <p>Información sobre el disco...</p>
+        <p>"El Madrileño" es el segundo álbum de estudio del rapero y cantautor español C. Tangana, lanzado el 26 de febrero de 2021 por Sony Music. Co-producido con Alizzz, Tangana experimenta con un sonido más orgánico y guitarrístico, alejándose del hip hop urbano anterior. Es un álbum colaborativo que rinde homenaje a sus raíces, con doce de catorce temas en colaboración con destacados artistas latinos de folk, rock y flamenco. El resultado es un mosaico de sus influencias adolescentes y la adopción de un nuevo alter ego que da nombre al álbum.</p>
+        
+        <p>Tracklist:</p>
+        <ul>
+            <li>Demasiadas Mujeres ★ </li>
+            <li>Tú Me Dejaste de Querer ★ </li>
+            <li>Comerte Entera ★ </li>
+            <li>Nunca Estoy ★ </li>
+            <li>Párteme La Cara </li>
+            <li>Ingobernable ★</li>
+            <li>Nominao</li>
+            <li>Un Veneno (G-Mix) ★</li>
+            <li>Te Olvidaste</li>
+            <li>Muriendo De Envidia</li>
+            <li>CAMBIA! ★</li>
+            <li>Cuándo Olvidaré ★</li>
+            <li>Los Tontos ★</li>
+            <li>Hong Kong</li>
+        </ul>
+        
+    </div>
+
+    <script>
+        function showContent(id) {
+            var sections = document.getElementsByClassName('content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+        var currentImageIndex = 0;
+
+function carouselRotate() {
+    var images = document.querySelectorAll('.carousel .carousel-image');
+    if (images.length === 0) return;
+
+    images[currentImageIndex].classList.add('hide');  // Hide current image
+    currentImageIndex = (currentImageIndex + 1) % images.length;  // Move to the next image
+    images[currentImageIndex].classList.remove('hide');  // Show the next image
+}
+
+setInterval(carouselRotate, 3000);
+
+    </script>
+    
+
+</body>
+</html>
